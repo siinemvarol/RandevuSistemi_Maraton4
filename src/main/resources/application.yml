@@ -1,1 +1,13 @@
+server:
+  port: 9090
 
+spring:
+  datasource:
+    url: "jdbc:postgresql://localhost:5432/DBRANDEVU"
+    username: "postgres"
+    password: "12345678"
+    driver-class-name: "org.postgresql.Driver"
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true

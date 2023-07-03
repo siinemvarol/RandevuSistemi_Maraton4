@@ -1,2 +1,20 @@
-package com.sinem.randevu.dto.response;public class RandevuListesiResponseDto {
+package com.sinem.randevu.dto.response;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.time.LocalDate;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+public class RandevuListesiResponseDto {
+    Long id;
+    String ad;
+    LocalDate randevuTarihi;
+    Integer randevuSaati;
+
 }

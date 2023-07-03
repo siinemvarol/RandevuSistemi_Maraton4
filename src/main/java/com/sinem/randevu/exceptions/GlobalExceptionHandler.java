@@ -1,4 +1,4 @@
-package com.sinem.exceptions;
+package com.sinem.randevu.exceptions;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -13,8 +13,8 @@ public class GlobalExceptionHandler {
     public ResponseEntity<ErrorMessage> hatalariYakalayanBenim(Exception ex){
         return new ResponseEntity<>(createErrorMessage(ex, ErrorType.INTERNAL_SERVER_ERROR), HttpStatus.INTERNAL_SERVER_ERROR);
     }
-    @ExceptionHandler(Java8StartException.class)
-    public ResponseEntity<ErrorMessage> Java8StartExceptionHandler(Java8StartException ex){
+    @ExceptionHandler(RandevuException.class)
+    public ResponseEntity<ErrorMessage> Java8StartExceptionHandler(RandevuException ex){
         return new ResponseEntity<>(createErrorMessage(ex, ex.getErrorType()), ex.getErrorType().getHttpStatus());
     }
 

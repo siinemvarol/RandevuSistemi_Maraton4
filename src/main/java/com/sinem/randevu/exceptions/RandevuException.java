@@ -1,4 +1,4 @@
-package com.sinem.exceptions;
+package com.sinem.randevu.exceptions;
 
 import lombok.Getter;
 
@@ -13,15 +13,15 @@ import lombok.Getter;
  */
 
 @Getter
-public class Java8StartException extends RuntimeException {
+public class RandevuException extends RuntimeException {
 
     private final ErrorType errorType;
-    public Java8StartException(ErrorType errorType){
+    public RandevuException(ErrorType errorType){
         super(errorType.getMessage());
         this.errorType = errorType;
     }
 
-    public Java8StartException(ErrorType errorType, String message){
+    public RandevuException(ErrorType errorType, String message){
         super(message);
         this.errorType = errorType;
     }

@@ -1,4 +1,4 @@
-package com.sinem.exceptions;
+package com.sinem.randevu.exceptions;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

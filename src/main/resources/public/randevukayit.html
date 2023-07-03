@@ -1,10 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Randevu Kayıt</title>
 </head>
 <body>
-$END$
+
+<form action="/randevu/randevuolustur" method="get"><br><br>
+    <input type="text" name="ad" placeholder="ad giriniz.." required><br><br>
+    <input type="text" name="telefon" placeholder="telefon giriniz.." required><br><br>
+    <input type="text" name="email" placeholder="email giriniz.."><br><br>
+    <input type="text" name="randevuTarihi" placeholder="randevu tarihini yıl-ay-gün formatında giriniz.."><br><br>
+    <input type="text" name="randevuSaati" placeholder="randevu saatini 09 ve 17 aralığında giriniz.."><br><br>
+
+    <br>
+    <button type="submit">Randevu Oluştur</button>
+</form>
+
 </body>
 </html>
